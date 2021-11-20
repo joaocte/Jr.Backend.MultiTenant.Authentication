@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB" Version="1.0.0-alpha-16" />
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB.Abstractions" Version="1.0.0-alpha-16" />
+    <PackageReference Include="MongoDB.Bson" Version="2.13.2" />
+  </ItemGroup>
+
+</Project>
