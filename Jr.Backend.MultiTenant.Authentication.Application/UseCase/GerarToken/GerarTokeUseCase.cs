@@ -1,4 +1,5 @@
-﻿using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+﻿using Jr.Backend.Libs.Security.Abstractions;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
 using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
 using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using Microsoft.IdentityModel.Tokens;
@@ -33,7 +34,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
                 new Claim("ClientSecret", tenant.ClientSecret.ToString()),
                 new Claim("TenantKey", tenant.TenantKey)
             };
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tenant.KeySecret));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Constants.PrivateKey));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 

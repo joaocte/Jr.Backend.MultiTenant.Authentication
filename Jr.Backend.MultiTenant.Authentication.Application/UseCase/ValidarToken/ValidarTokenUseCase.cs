@@ -1,4 +1,5 @@
 ﻿using Jr.Backend.Libs.Domain.Abstractions.Exceptions;
+using Jr.Backend.Libs.Security.Abstractions;
 using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
 using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
@@ -37,7 +38,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
             if (tenant == null)
                 throw new NotFoundException("Token Iválido");
 
-            var validationParameters = GetValidationParameters(tenant.KeySecret);
+            var validationParameters = GetValidationParameters();
             SecurityToken validatedToken;
             var principal = handler.ValidateToken(query.Token, validationParameters, out validatedToken);
             return new ValidarTokenQueryResponse
@@ -46,7 +47,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
             };
         }
 
-        private static TokenValidationParameters GetValidationParameters(string KeySecret)
+        private static TokenValidationParameters GetValidationParameters()
         {
             return new TokenValidationParameters()
             {
@@ -55,7 +56,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
                 ValidateIssuer = false,
                 ValidIssuer = null,
                 ValidAudience = null,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(KeySecret)) // The same key as the one that generate the token
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Constants.PrivateKey)) // The same key as the one that generate the token
             };
         }
 

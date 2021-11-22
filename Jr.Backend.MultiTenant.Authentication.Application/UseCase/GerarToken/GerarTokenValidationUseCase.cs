@@ -1,4 +1,5 @@
-﻿using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+﻿using Jr.Backend.Libs.Domain.Abstractions.Exceptions;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
 using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
 using Jr.Backend.MultiTenant.Authentication.Domain.ValueObjects.Enum;
 using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
@@ -24,7 +25,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
             var tenantCadastrado = await _tenantRepository.ExistsAsync(x => x.ClientId == query.ClientId && x.ClientSecret == query.ClientSecret && x.Status == Status.Ativo.ToString(), cancellationToken);
 
             if (!tenantCadastrado)
-                throw new NotFiniteNumberException("Não foi encontrado Tenant ativo para os dados informados");
+                throw new NotFoundException("Não foi encontrado Tenant ativo para os dados informados");
 
             return await _gerarTokenUseCase.ExecuteAsync(query, cancellationToken);
         }

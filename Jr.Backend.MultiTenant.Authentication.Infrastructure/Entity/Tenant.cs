@@ -19,6 +19,5 @@ namespace Jr.Backend.MultiTenant.Authentication.Infrastructure.Entity
         public string Status { get; set; }
         public string TenantName { get; set; }
         public string TenantKey { get; set; }
-        public string KeySecret { get; set; }
     }
 }
