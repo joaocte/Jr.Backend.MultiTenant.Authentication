@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB" Version="1.0.0-alpha-18" />
-    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB.Abstractions" Version="1.0.0-alpha-18" />
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.EntityFramework.Abstractions" Version="1.0.0-alpha-15" />
+    <PackageReference Include="Jr.Backend.Libs.Infrastructure.MongoDB" Version="1.0.0-alpha-15" />
     <PackageReference Include="MongoDB.Bson" Version="2.13.2" />
   </ItemGroup>
 
