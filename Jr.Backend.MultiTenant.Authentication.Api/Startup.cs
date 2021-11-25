@@ -1,4 +1,5 @@
 using Jr.Backend.Libs.Framework.DependencyInjection;
+using Jr.Backend.Libs.Security.DependencyInjection;
 using Jr.Backend.MultiTenant.Authentication.Api.Swagger;
 using Jr.Backend.MultiTenant.Authentication.Application.DependencyInjection;
 using Jr.Backend.MultiTenant.Authentication.Infrastructure.DependencyInjection;
@@ -50,6 +51,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Api
             services.AddServiceDependencyApplication();
             services.AddServiceDependencyInfrastructure();
             services.AddServiceDependencyJrFramework();
+            services.AddServiceDependencyJrSecurityApi();
         }
 
         /// <inheritdoc/>
@@ -66,6 +68,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Api
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -3,6 +3,7 @@ using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
 using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
 using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Api.Controllers.V1
     [Route("api/[controller]")]
     [ApiController]
     [ApiVersion("1.0")]
+    [Authorize]
     public class TenantController : ControllerBase
     {
         [HttpGet]
