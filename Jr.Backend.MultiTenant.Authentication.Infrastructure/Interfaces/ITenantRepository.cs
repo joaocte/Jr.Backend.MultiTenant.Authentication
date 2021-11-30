@@ -1,7 +1,7 @@
-﻿using Jr.Backend.Libs.Domain.Abstractions.Interfaces.Repository;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Entity;
+﻿using Jror.Backend.Libs.Infrastructure.Data.Shared.Interfaces;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Entity;
 
-namespace Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces
+namespace Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces
 {
     public interface ITenantRepository : IRepository<Tenant>
     {

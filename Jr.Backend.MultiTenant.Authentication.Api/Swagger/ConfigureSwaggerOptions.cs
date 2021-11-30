@@ -6,7 +6,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.IO;
 
-namespace Jr.Backend.MultiTenant.Authentication.Api.Swagger
+namespace Jror.Backend.MultiTenant.Authentication.Api.Swagger
 {
     /// <inheritdoc/>
     public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
@@ -32,7 +32,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Api.Swagger
         {
             var info = new OpenApiInfo
             {
-                Title = "Jr.Backend.Fornecedor",
+                Title = "Jror.Backend.Fornecedor",
                 Version = description.ApiVersion.ToString()
             };
 

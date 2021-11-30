@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using Jr.Backend.Libs.Domain.Abstractions.Interfaces.Repository;
-using Jr.Backend.MultiTenant.Authentication.Domain;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+using Jror.Backend.Libs.Infrastructure.Data.Shared.Interfaces;
+using Jror.Backend.MultiTenant.Authentication.Domain;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant
+namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant
 {
     public class CadastrarTenantUseCase : ICadastrarTenantUseCase
     {

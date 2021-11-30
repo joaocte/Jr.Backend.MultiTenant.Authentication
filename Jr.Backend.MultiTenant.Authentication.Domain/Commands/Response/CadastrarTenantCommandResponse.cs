@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response
+namespace Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response
 {
     public class CadastrarTenantCommandResponse
     {

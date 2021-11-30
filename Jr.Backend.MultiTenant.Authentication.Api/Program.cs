@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Api
+namespace Jror.Backend.MultiTenant.Authentication.Api
 {
     public class Program
     {

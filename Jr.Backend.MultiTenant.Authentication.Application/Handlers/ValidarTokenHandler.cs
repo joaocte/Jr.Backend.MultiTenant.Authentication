@@ -1,11 +1,11 @@
-﻿using Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
+﻿using Jror.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.Handlers
+namespace Jror.Backend.MultiTenant.Authentication.Application.Handlers
 {
     public class ValidarTokenHandler : IRequestHandler<ValidarTokenQuery, ValidarTokenQueryResponse>
     {

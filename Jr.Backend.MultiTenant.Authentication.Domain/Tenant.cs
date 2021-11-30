@@ -1,10 +1,10 @@
 ﻿using Jr.Backend.Libs.Domain.Abstractions;
-using Jr.Backend.MultiTenant.Authentication.Domain.Validations;
-using Jr.Backend.MultiTenant.Authentication.Domain.ValueObjects.Enum;
+using Jror.Backend.MultiTenant.Authentication.Domain.Validations;
+using Jror.Backend.MultiTenant.Authentication.Domain.ValueObjects.Enum;
 using System;
 using System.Text.Json.Serialization;
 
-namespace Jr.Backend.MultiTenant.Authentication.Domain
+namespace Jror.Backend.MultiTenant.Authentication.Domain
 {
     public class Tenant : Entity
     {

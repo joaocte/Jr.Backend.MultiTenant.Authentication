@@ -4,7 +4,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Linq;
 
-namespace Jr.Backend.MultiTenant.Authentication.Api.Swagger
+namespace Jror.Backend.MultiTenant.Authentication.Api.Swagger
 {
     public class SwaggerVersioningOperationFilter : IOperationFilter
     {

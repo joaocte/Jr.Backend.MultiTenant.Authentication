@@ -1,13 +1,13 @@
-﻿using Jr.Backend.Libs.Domain.Abstractions.Exceptions;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using Jr.Backend.MultiTenant.Authentication.Domain.ValueObjects.Enum;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+﻿using Jror.Backend.Libs.Domain.Abstractions.Exceptions;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+using Jror.Backend.MultiTenant.Authentication.Domain.ValueObjects.Enum;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
+namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
 {
     public class GerarTokenValidationUseCase : IGerarTokenUseCase
     {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -26,6 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Jr.Backend.MultiTenant.Authentication.Domain\Jr.Backend.MultiTenant.Authentication.Domain.csproj" />
 	  <ProjectReference Include="..\Jr.Backend.MultiTenant.Authentication.Domain\Jr.Backend.MultiTenant.Authentication.Domain.csproj" />
 	</ItemGroup>
 

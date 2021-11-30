@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using Jr.Backend.MultiTenant.Authentication.Application.AutoMapper;
-using Jr.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant;
-using Jr.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken;
-using Jr.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant;
-using Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken;
+using Jror.Backend.MultiTenant.Authentication.Application.AutoMapper;
+using Jror.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant;
+using Jror.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken;
+using Jror.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant;
+using Jror.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.DependencyInjection
+namespace Jror.Backend.MultiTenant.Authentication.Application.DependencyInjection
 {
     public static class ServicesDependency
     {

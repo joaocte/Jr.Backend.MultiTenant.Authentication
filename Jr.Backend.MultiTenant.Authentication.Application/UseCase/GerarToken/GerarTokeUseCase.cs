@@ -1,7 +1,7 @@
-﻿using Jr.Backend.Libs.Security.Abstractions;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+﻿using Jror.Backend.Libs.Security.Abstractions;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
+namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.GerarToken
 {
     public class GerarTokeUseCase : IGerarTokenUseCase
     {

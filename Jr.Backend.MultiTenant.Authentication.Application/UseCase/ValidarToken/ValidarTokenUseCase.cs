@@ -1,13 +1,13 @@
-﻿using Jr.Backend.Libs.Security.Abstractions;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+﻿using Jror.Backend.Libs.Security.Abstractions;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
+namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
 {
     public class ValidarTokenUseCase : IValidarTokenUseCase
     {

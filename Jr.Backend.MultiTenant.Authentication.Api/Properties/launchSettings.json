@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Jr.Backend.MultiTenant.Authentication.Api": {
+    "Jror.Backend.MultiTenant.Authentication.Api": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

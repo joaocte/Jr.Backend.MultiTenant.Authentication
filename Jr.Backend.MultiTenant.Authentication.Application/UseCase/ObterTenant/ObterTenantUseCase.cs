@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant
+namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant
 {
     public class ObterTenantUseCase : IObterTenantUseCase
     {

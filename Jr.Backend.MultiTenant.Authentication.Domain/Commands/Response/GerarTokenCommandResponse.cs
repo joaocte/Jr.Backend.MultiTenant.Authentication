@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response
+namespace Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response
 {
     public class GerarTokenCommandResponse : ApiToken
     {

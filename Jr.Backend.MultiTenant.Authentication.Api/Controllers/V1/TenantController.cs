@@ -1,14 +1,14 @@
-﻿using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
+﻿using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace Jr.Backend.MultiTenant.Authentication.Api.Controllers.V1
+namespace Jror.Backend.MultiTenant.Authentication.Api.Controllers.V1
 {
     [Route("api/[controller]")]
     [ApiController]

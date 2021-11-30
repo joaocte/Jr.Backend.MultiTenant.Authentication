@@ -1,9 +1,9 @@
-﻿using Jr.Backend.Libs.Infrastructure.MongoDB.Abstractions.Interfaces;
-using Jr.Backend.Libs.Infrastructure.MongoDB.Repository;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Entity;
-using Jr.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
+﻿using Jror.Backend.Libs.Infrastructure.MongoDB.Abstractions.Interfaces;
+using Jror.Backend.Libs.Infrastructure.MongoDB.Repository;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Entity;
+using Jror.Backend.MultiTenant.Authentication.Infrastructure.Interfaces;
 
-namespace Jr.Backend.MultiTenant.Authentication.Infrastructure.Repository.MongoDb
+namespace Jror.Backend.MultiTenant.Authentication.Infrastructure.Repository.MongoDb
 {
     public class TenantRepository : MongoRepository<Tenant>, ITenantRepository
     {
