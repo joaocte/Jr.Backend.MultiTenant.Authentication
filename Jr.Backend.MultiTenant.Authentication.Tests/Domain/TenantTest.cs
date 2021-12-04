@@ -1,8 +1,8 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Domain;
-using System;
+﻿using System;
+using Jr.Backend.MultiTenant.Authentication.Domain;
 using Xunit;
 
-namespace Jror.Backend.MultiTenant.Authentication.Tests.Domain
+namespace Jr.Backend.MultiTenant.Authentication.Tests.Domain
 {
     public class TenantTest
     {

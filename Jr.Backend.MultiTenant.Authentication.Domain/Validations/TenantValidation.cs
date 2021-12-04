@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Jror.Backend.MultiTenant.Authentication.Domain.Validations
+namespace Jr.Backend.MultiTenant.Authentication.Domain.Validations
 {
     public class TenantValidation : AbstractValidator<Tenant>
     {

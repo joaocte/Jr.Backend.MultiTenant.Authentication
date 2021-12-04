@@ -1,10 +1,10 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
 
-namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant
+namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant
 {
     public interface ICadastrarTenantUseCase : IDisposable
     {

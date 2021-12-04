@@ -1,11 +1,11 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant;
-using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request;
-using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
-using MediatR;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
+using Jr.Backend.MultiTenant.Authentication.Application.UseCase.CadastrarTenant;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request;
+using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+using MediatR;
 
-namespace Jror.Backend.MultiTenant.Authentication.Application.Handlers
+namespace Jr.Backend.MultiTenant.Authentication.Application.Handlers
 {
     public class CadastrarTenantHandler : IRequestHandler<CadastrarTenantCommand, CadastrarTenantCommandResponse>
     {

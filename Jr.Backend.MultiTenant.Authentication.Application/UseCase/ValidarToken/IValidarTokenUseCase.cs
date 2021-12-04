@@ -1,9 +1,9 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 
-namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
+namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ValidarToken
 {
     public interface IValidarTokenUseCase : IDisposable
     {

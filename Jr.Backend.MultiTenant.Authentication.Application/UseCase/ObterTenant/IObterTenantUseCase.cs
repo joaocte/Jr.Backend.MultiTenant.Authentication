@@ -1,10 +1,10 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
-using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
 
-namespace Jror.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant
+namespace Jr.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant
 {
     public interface IObterTenantUseCase : IDisposable
     {

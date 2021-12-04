@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System.Linq;
 
-namespace Jror.Backend.MultiTenant.Authentication.Api.Swagger
+namespace Jr.Backend.MultiTenant.Authentication.Api.Swagger
 {
     public class SwaggerVersioningOperationFilter : IOperationFilter
     {

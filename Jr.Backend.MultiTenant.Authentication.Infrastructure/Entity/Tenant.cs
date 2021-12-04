@@ -1,8 +1,8 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using System;
 
-namespace Jror.Backend.MultiTenant.Authentication.Infrastructure.Entity
+namespace Jr.Backend.MultiTenant.Authentication.Infrastructure.Entity
 {
     public class Tenant
     {

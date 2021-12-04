@@ -1,11 +1,11 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant;
-using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Request;
-using Jror.Backend.MultiTenant.Authentication.Domain.Querys.Response;
-using MediatR;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
+using Jr.Backend.MultiTenant.Authentication.Application.UseCase.ObterTenant;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Request;
+using Jr.Backend.MultiTenant.Authentication.Domain.Querys.Response;
+using MediatR;
 
-namespace Jror.Backend.MultiTenant.Authentication.Application.Handlers
+namespace Jr.Backend.MultiTenant.Authentication.Application.Handlers
 {
     public class ObterTenantHandler : IRequestHandler<ConsultarTenantQuery, ConsultarTenantQueryResponse>
     {

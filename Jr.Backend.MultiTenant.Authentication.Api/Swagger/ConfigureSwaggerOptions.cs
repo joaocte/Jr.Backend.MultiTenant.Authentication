@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.ApiExplorer;
+﻿using System;
+using System.IO;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.IO;
 
-namespace Jror.Backend.MultiTenant.Authentication.Api.Swagger
+namespace Jr.Backend.MultiTenant.Authentication.Api.Swagger
 {
     /// <inheritdoc/>
     public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>

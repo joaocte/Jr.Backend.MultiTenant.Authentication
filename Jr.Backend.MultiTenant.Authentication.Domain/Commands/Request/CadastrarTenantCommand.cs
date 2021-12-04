@@ -1,7 +1,7 @@
-﻿using Jror.Backend.MultiTenant.Authentication.Domain.Commands.Response;
+﻿using Jr.Backend.MultiTenant.Authentication.Domain.Commands.Response;
 using MediatR;
 
-namespace Jror.Backend.MultiTenant.Authentication.Domain.Commands.Request
+namespace Jr.Backend.MultiTenant.Authentication.Domain.Commands.Request
 {
     public class CadastrarTenantCommand : IRequest<CadastrarTenantCommandResponse>
     {

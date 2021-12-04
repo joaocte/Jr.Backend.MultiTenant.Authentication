@@ -1,16 +1,16 @@
-using Jror.Backend.Libs.Api.DependencyInjection;
+using Jr.Backend.MultiTenant.Authentication.Application.DependencyInjection;
+using Jr.Backend.MultiTenant.Authentication.Infrastructure.DependencyInjection;
 using Jror.Backend.Libs.API.Abstractions;
+using Jror.Backend.Libs.Api.DependencyInjection;
 using Jror.Backend.Libs.Framework.DependencyInjection;
 using Jror.Backend.Libs.Security.DependencyInjection;
-using Jror.Backend.MultiTenant.Authentication.Application.DependencyInjection;
-using Jror.Backend.MultiTenant.Authentication.Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Jror.Backend.MultiTenant.Authentication.Api
+namespace Jr.Backend.MultiTenant.Authentication.Api
 {
     public class Startup
     {

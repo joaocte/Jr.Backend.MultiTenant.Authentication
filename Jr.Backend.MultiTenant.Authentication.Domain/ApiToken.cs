@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jror.Backend.MultiTenant.Authentication.Domain
+namespace Jr.Backend.MultiTenant.Authentication.Domain
 {
     public class ApiToken
     {
