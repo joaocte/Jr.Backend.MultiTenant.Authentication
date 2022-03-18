@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jror.Backend.Libs.Domain" Version="1.1.1" />
-    <PackageReference Include="Jror.Backend.Libs.Domain.Abstractions" Version="1.1.1" />
-    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Jror.Backend.Libs.Domain" Version="1.1.4" />
+    <PackageReference Include="Jror.Backend.Libs.Domain.Abstractions" Version="1.1.4" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 

@@ -12,7 +12,7 @@ namespace Jr.Backend.MultiTenant.Authentication.Infrastructure.DependencyInjecti
     {
         public static void AddServiceDependencyInfrastructure(this IServiceCollection services)
         {
-            services.AddServiceDependencyJrorInfrastructureMongoDb(ConnectionType.DirectConnection);
+            services.AddServiceDependencyJrorInfrastructureMongoDb(ConnectionType.ReplicaSet);
 
             services.AddScoped<ITenantRepository>(p =>
             {

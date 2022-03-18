@@ -13,7 +13,6 @@ namespace Jr.Backend.MultiTenant.Authentication.Api.Controllers.V1
     [Route("api/[controller]")]
     [ApiController]
     [ApiVersion("1.0")]
-    [Authorize]
     public class TenantController : ControllerBase
     {
         [HttpGet]
